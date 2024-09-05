@@ -1,0 +1,13 @@
+start
+enter num1
+read the num1
+enter the num2
+read the num2
+num2 is the divisor
+   if num1 mod num2=0
+print num2 is a divisor of num1
+   else num2 is not a divisor of num1
+ if num1 mod2 =0
+it is even
+  else it is odd
+end
