@@ -1,0 +1,25 @@
+start
+int num1 , num 2
+print enter number
+enter the number 
+characters are: +,-,*,/,%
+input the characters
+read the characters
+if the character is not from the list of characters recognized
+show error
+for +
+sum= num1 + num2
+print sum
+for -
+dif = num1 - num2
+print the difference
+for *
+product = num1 * num2
+print product
+for /
+quotient = num1/num2
+print quotient
+for %
+mod = num1%num2
+print mod
+end
