@@ -1,0 +1,8 @@
+start
+ input  a
+ input  b
+ input  c
+ read  a,b,c
+ sum  = -(a-b-c)
+ print  sum
+end
