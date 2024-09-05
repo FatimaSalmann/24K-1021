@@ -1,0 +1,16 @@
+start
+int 1= January
+2= February
+3= march
+4= April
+5= may
+6= June
+7= July
+8= august
+9= September
+10= October
+11= November
+12= December
+print enter number
+print " the month is :" the month corresponding to the entered number,
+end
