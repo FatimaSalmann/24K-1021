@@ -1,0 +1,17 @@
+#include<stdio.h>
+int main()
+{
+int a;
+int b;
+int c;
+printf("enter value for a");
+scanf("%d",&a);
+printf("enter value for b");
+scanf("%d",&b);
+c=(a+b);
+b=(c-a);
+a=(c-b);
+printf("now a is %d" ,b);
+printf("now b is %d" ,a);
+return 0;
+}
