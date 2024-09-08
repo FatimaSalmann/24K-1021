@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+float x1=5.0;
+float y1=4.0;
+float x2=3.0;
+float y2=2.0;
+float slope;
+slope=(y2-y1)/(x2-x1);
+printf("The slope between the points (5.0,4.0) and (3.0,2.0) is: %.3f\n",slope);
+return 0;
+}
