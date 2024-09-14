@@ -1,0 +1,33 @@
+#include<stdio.h>
+int main()
+{
+int customerID,units;
+float totalbill;
+char n;
+printf("Enter customer ID\n");
+scanf("%d" , &customerID);
+printf("Enter customer name\n");
+scanf("%s", &n);
+printf("enter units consumed\n");
+scanf("%d", &units);
+ if
+(units <= 199 && units>=0){
+totalbill=16.20*units;}
+  else if
+(units>=200 && units<300){
+totalbill=20.10*units;}
+    else if
+(units>=300 && units<500){
+totalbill=27.10*units;}
+      else
+{totalbill=35.90*units;}
+ if
+(totalbill>18000){
+totalbill=totalbill+totalbill*0.15;}
+printf("\n Electric bill\n");
+printf("customer name; %s\n", n);
+printf("customer Id: %d\n", customerID);
+printf("units consumed: %d\n" , units);
+printf("total bill: %.2f\n" , totalbill);
+return 0;
+}
