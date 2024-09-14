@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main (){
+float cost,discount,discountAmount,finalAmount;
+printf("Enter cost");
+scanf("%1f",&cost);
+discount=0;
+if 
+ (cost>=500){
+  if(cost<2000){
+  discount=0,05;}
+    else if (cost>=2000 && cost <=4000){
+    	discount=0.10;}
+    	  else if (cost>4000 && cost <= 6000){
+    	  	discount=0.20;}
+    	  	  else if(cost>6000){
+    	  	  	discount=0.35;}
+  }
+  discountAmount=cost*discount;
+  finalAmount=cost-discountAmount;
+  printf("Actual amount:%.2f\n", cost);
+  printf("Saved amount:%.2f\n", discountAmount);
+  printf("Actual amount:%.2f\n", finalAmount);
+  return 0;
+}
