@@ -1,16 +1,24 @@
 #include<stdio.h>
 int main()
 {
-int c
-printf("enter a character");
-scanf{"%c" , &c);
- if (islower(C))
-{printf("%c" is a smaller alphabet.\n");}
- else if (isupper(c)) 
-{printf("%c" letter is a capital alphabet.\n");}
- else if (isdigit(C))
-{printf("%c" is a digit.\n);}
- else 
-{printf("%c" is a special character.\n");}
+char c;
+printf("enter a character: ");
+scanf("%c" , &c);
+if (c >= 'a' && c <= 'z')
+{
+    printf("%c is a Lowercase alphabet.\n", c);
+}
+else if (c >= 'A' && c <= 'Z') 
+{
+    printf("%c letter is a capital alphabet.\n", c);
+}
+else if (c >= '0' && c <= '9')
+{
+    printf("%c is a digit.\n", c);
+}
+else 
+{
+    printf("%c is a special character.\n", c);
+}
 return 0;
 }
