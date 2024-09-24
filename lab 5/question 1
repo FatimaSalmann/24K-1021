@@ -1,0 +1,19 @@
+#include<stdio.h>
+int main ()
+{
+float totalC , Fatg , calfromFat , perCfromFat;
+printf("enter total no. of calories (must be >=0)");
+scanf("%f" , &totalC);
+printf("Enter no. of fat in grams (must be >=0)");
+scanf("%f" , &Fatg);
+   if ( totalC < 0 || Fatg < 0)
+{ printf(" Error : fat and calories must be positive\n");}
+calfromFat = Fatg*9;
+   if (calfromFat > totalC )
+{printf(" Error: calories from fat cannot exceed total calories\n");}
+return 1;
+perCfromFat=(calfromFat/totalC)*100;
+printf(" calories from fat: %.2f\n" , calfromFat);
+printf(" percentage of calories from fat : %.2f%\n" , perCfromFat);
+return 0;
+}
