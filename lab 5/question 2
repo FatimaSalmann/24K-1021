@@ -1,0 +1,14 @@
+#include<stdio.h>
+int main ()
+{
+int weekD , vacation ;
+printf("is it a weekday? (1 for true , 0 for false)");
+scanf("%d" , &weekD);
+printf("are we on vacation? (1 for true , 0 for false)");
+scanf("%d" , &vacation);
+   if (weekD==0 || vacation==1)
+{ printf("you can sleep in: True\n");}
+   else
+{ printf("you can sleep in False: Fase\n");}
+return 0;
+}
