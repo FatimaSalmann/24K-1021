@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main ()
+{
+float GPA;
+printf("enter your GPA");
+scanf("%.2f" , GPA);
+  { if  (GPA >= 0.0 && GPA <= 0.99)
+   {printf("failed semester - registration suspended");}
+  else if (GPA >= 1.00 && GPA <= 1.99)
+   {printf("on probation for next semester");}
+  else if (GPA >= 2.0 && GPA <= 2.99)
+   {printf("no message");}
+  else if (GPA >= 3.0 && GPA <= 3.49)
+   {printf("dean's list for semester");}
+  else if (GPA >= 3.5 && GPA <= 4.00)
+   {printf(" hightest honors for semester");}
+  else
+  {printf("invalid entry");}
+}
+return 0;
+}
