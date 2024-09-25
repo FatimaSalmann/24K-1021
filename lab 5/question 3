@@ -1,0 +1,81 @@
+#include <stdio.h>
+int main()
+{ 
+float water, sugar, mixA , coffee , milk, mixB ,total;
+char coffeeT, size;
+printf("how do you like your coffee : press b for black and w for white ");
+scanf("%c" , &coffeeT);
+printf("enter the size : d for double , s for single ");
+scanf(" %c" , &size);
+switch(coffeeT){
+      case'b':
+      case'B':
+         water=20.0;
+         sugar=20.0;
+         mixA=25.0;
+         coffee=15.0;
+         milk=0.0;
+         mixB=25.0;
+      total=water+sugar+mixA+coffee+milk+mixB;
+           switch(size){
+         case's':
+                 case'S': 
+                  printf("put water time: %.2f\n", water);
+                  printf("put sugar time: %.2f\n", sugar);
+                  printf("mix well time: %.2f\n", mixA);
+                  printf("put coffee time: %.2f\n", coffee);
+                  printf("put milk time: %.2f\n", milk);
+                  printf("mix well time: %.2f\n", mixB);
+                  printf("total making time: %.2f\n", total);
+                 break;
+         case'd':
+                 case'D':
+                  printf("put water time: %.2f\n", water);
+                  printf("put sugar time: %.2f\n", sugar);
+                  printf("mix well time: %.2f\n", mixA);
+                  printf("put coffee time: %.2f\n", coffee);
+                  printf("put milk time: %.2f\n", milk);
+                  printf("mix well time: %.2f\n", mixB);
+                  total=total*1.5;
+                  printf("total making time: %.2f\n", total);
+                 break;
+                 default: printf("wrong entry"); }
+              break;
+        case'w':
+               case'W':
+        	  water=15.0;
+                  sugar=15.0;
+                  mixA=20.0;
+                  coffee=2.0;
+                  milk=4.0;
+                  mixB=20.0;
+                  total=water+sugar+mixA+coffee+milk+mixB;
+              switch(size){
+        case's':
+                 case'S': 
+                      printf("put water time: %.2f\n", water);
+                      printf("put sugar time: %.2f\n", sugar);
+                      printf("mix well time: %.2f\n", mixA);
+                      printf("put coffee time: %.2f\n", coffee);
+                      printf("put milk time: %.2f\n", milk);
+                      printf("mix well time: %.2f\n", mixB);
+                      printf("total making time: %.2f\n", total);
+                
+                break;
+        case'd':
+                 case'D':
+                 printf("put water time: %.2f\n", water);
+                  printf("put sugar time: %.2f\n", sugar);
+                  printf("mix well time: %.2f\n", mixA);
+                  printf("put coffee time: %.2f\n", coffee);
+                  printf("put milk time: %.2f\n", milk);
+                  printf("mix well time: %.2f\n", mixB);
+                  total=total*1.5;
+                  printf("total making time: %.2f\n", total);
+                 break;
+                 default: printf("wrong entry");
+                }
+      break;
+    default:
+printf("wrong entry");}
+return 0;}
