@@ -1,0 +1,10 @@
+#include &lt;stdio.h&gt;
+int main()
+{
+    int x;
+    x = 5 > 8 ? 10 : 1 != 2 < 5 ? 20 : 30;
+    printf("Value of x:%d" , x);
+    return 0; 
+
+// output is 30 due to lack of structure "()" in the if/else statement , the first condition being false , second being true , the program was misintrepretated at the last statement.
+// eventhough the last statement being true , the program skipped the if statement and diretly jumped to the else statement which gives the output of 30.
