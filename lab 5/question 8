@@ -1,0 +1,24 @@
+#include<stdio.h>
+int main()
+ {
+    char roll_number[7];
+    int registrationYear, currentYear = 24; 
+    int yearsPassed, semester;
+    int sectionDigit;
+    char section;
+    printf("Enter roll number (for eg: 24K-1021): ");
+    scanf("%6s", roll_number);
+    registrationYear = (roll_number[0] - '0') * 10 + (roll_number[1] - '0'); 
+    yearsPassed = currentYear - registrationYear;
+    (yearsPassed < 5) ?
+    semester=5-yearsPassed
+    : 'error';
+    sectionDigit = roll_number[5]-'0';
+    (sectionDigit >= 1 && sectionDigit <= 6) ?
+  	section=(sectionDigit + 'A'-1)
+    : 'error' ;
+    printf("Registration Year: %d\n", registrationYear);
+    printf("Current Semester: %d\n", semester);
+    printf("Section: %c\n", section);
+    return 0; 
+}
