@@ -9,11 +9,11 @@ int main()
     printf("Enter roll number (for eg: 24K-1021): ");
     scanf("%6s", roll_number);
     registrationYear = (roll_number[0] - '0') * 10 + (roll_number[1] - '0'); 
-    yearsPassed = currentYear - registrationYear;
+    yearsPassed = (currentYear - registrationYear);
     (yearsPassed < 5) ?
-    semester=5-yearsPassed
+   	semester= (yearsPassed*2+1)
     : 'error';
-    sectionDigit = roll_number[5]-'0';
+    sectionDigit = roll_number[4]-'0';
     (sectionDigit >= 1 && sectionDigit <= 6) ?
   	section=(sectionDigit + 'A'-1)
     : 'error' ;
