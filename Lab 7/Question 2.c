@@ -7,7 +7,7 @@ int main() {
 
     // scanf user input
     printf("Enter a string: ");
-    scanf("%s", input); 
+    gets(input); 
 
     // Checking the vowels
     for (f = 0; input[f] != '\0'; f++) {
