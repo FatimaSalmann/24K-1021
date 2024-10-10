@@ -2,7 +2,7 @@
 int main() {
     int arr[6] = {1, 2, 3, 4, 5, 6};
     int size = 6;
-    int last_element
+    int last_element;
 
     // original array
     printf("Original array: ");
