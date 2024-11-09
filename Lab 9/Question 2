@@ -1,0 +1,32 @@
+#include <stdio.h>
+void swapIntegers(int *a, int *b) {
+    int temp = *a; // pointers to swap addresses of int
+    *a = *b;
+    *b = temp;
+}
+
+int main() {
+    int num1, num2;
+
+    // enter two integers
+    printf("Enter the first integer: ");
+    scanf("%d", &num1);
+
+    printf("Enter the second integer: ");
+    scanf("%d", &num2);
+
+    // Display the values before swapping
+    printf("Before swapping: \n");
+    printf("First integer: %d\n", num1);
+    printf("Second integer: %d\n", num2);
+
+    // Call the swap function to swap the values
+    swapIntegers(&num1, &num2);
+
+    // Display the values after swapping
+    printf("After swapping: \n");
+    printf("First integer: %d\n", num1);
+    printf("Second integer: %d\n", num2);
+
+    return 0;
+}
