@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <string.h>
+#include <ctype.h>
+
+int palindrome(char str[]) {
+    int start = 0;
+    int end = strlen(str) - 1;
+
+    // Convert the string to lowercase
+    strlwr(str);
+
+    // Compare characters from the start and end, moving towards the center
+    while (start < end) {
+        if (str[start] != str[end]) {
+            return 0;  // Not a palindrome
+        }
+        start++;
+        end--;
+    }
+    return 1;  // It's a palindrome
+}
+int main() {
+    char words[5][21];  
+    
+    // Input the words
+    printf("Enter 5 words (each up to 20 characters):\n");
+    for (int i = 0; i < 5; i++) {
+        printf("Word %d: ", i + 1);
+        fgets(words[i], sizeof(words[i]), stdin);
+        
+        // Remove the newline character at the end 
+        if (words[i][strlen(words[i]) - 1] == '\n') {
+    words[i][strlen(words[i]) - 1] = '\0';
+}
+    }
+    // Check each word for palindrome and display the result
+    for (int i = 0; i < 5; i++) {
+        if (palindrome(words[i])) {
+            printf("Word %d: %s - Palindrome\n", i + 1, words[i]);
+        } else {
+            printf("Word %d: %s - Not Palindrome\n", i + 1, words[i]);
+        }
+    }
+    return 0;
+}
